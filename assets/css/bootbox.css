@@ -1,0 +1,15 @@
+.close{
+	font-size: 36px !important;
+    margin: -6px 0;
+    font-weight: bold !important;
+}
+
+.panel-heading{
+	padding: 0px !important;
+}
+
+.panel-heading h4{ 
+	text-transform: capitalize;
+	margin: 0px;
+	padding: 0px;
+}

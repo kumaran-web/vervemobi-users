@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+
+DirectoryIndex index.php
+RewriteRule ^home/?$ index.php [NC,L]
+
+RewriteRule ^users/?$ users_list.php [NC,L]
+	RewriteRule ^load-users/?$ actions/get_users.php [NC,L]
+	RewriteRule ^update-user/?$ actions/update_user.php [NC,L]
+
+	
