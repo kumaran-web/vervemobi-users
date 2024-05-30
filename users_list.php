@@ -5,7 +5,14 @@ include "includes/header.php";
 
 <!-- Begin page content -->
 <main role="main" class="container">
-	<h1 class="mt-5">Users</h1>
+	<div class="content-header-left">
+		<h1>Users</h1>
+	</div>
+	
+	<div class="content-header-right">
+		
+	</div>
+	<hr>
 	
 	<?php
 	$usersColumns = 6;
@@ -84,6 +91,18 @@ function loadUsersData(){
 			}, 1000);
 		}
 	});
+}
+
+function add_new_user(){
+	var dialog_load = '<div id="content_holder"><span class="bootbox_load"><i data-feather="loader"></i> Loading...</span></div>';
+	bootbox_div = bootbox.dialog({
+		message: dialog_load,
+		onOpen : function(){
+			$.post('add-user-form', function(data){
+				$('#content_holder').html(data);
+			});
+		}
+	}).attr("id", "akr_popup");
 }
 
 function edit_user(user_id){

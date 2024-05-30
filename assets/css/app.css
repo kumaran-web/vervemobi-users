@@ -1,6 +1,16 @@
 .navbar-inverse .navbar-brand{
 	color: #ffffff;
 }
+.navbar{
+	border-radius: 0px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
 
 .loader{
 	text-align: center;	
@@ -15,6 +25,27 @@ table > thead {
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
 	background-color: #009688;
 	color: #ffffff;
+}
+
+.content-header-left{
+	float: left;
+	width: 60%;
+}
+.content-header-right{
+	float: right;
+	width: 40%;
+}
+.content-header-right button{
+	float: right;
+	margin: 25px 0px 0px 0px;
+}
+
+.row{
+	margin: 0px !important;
+}
+label {
+    color: inherit;
+    font-weight: 500;
 }
 
 .footer {

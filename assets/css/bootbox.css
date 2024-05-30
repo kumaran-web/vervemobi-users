@@ -1,15 +1,48 @@
 .close{
 	font-size: 36px !important;
-    margin: -6px 0;
+    margin: -4px 0;
     font-weight: bold !important;
+    opacity: 0.5;
 }
 
 .panel-heading{
-	padding: 0px !important;
+	padding: 5px 15px !important;
 }
 
 .panel-heading h4{ 
 	text-transform: capitalize;
 	margin: 0px;
 	padding: 0px;
+}
+
+.bootbox-buttons{
+	width: 100%;
+	text-align: left;
+	padding: 0px 15px;
+	margin: 20px 0px;
+}
+
+.bootbox-buttons .bootbox-submit-status{
+	float: left;
+	/*color: cyan;*/
+	color: #10b759;
+}
+.bootbox-buttons .error{
+	float: left;
+	color: #FF5722 !important;
+}
+.bootbox-buttons .success{
+	float: left;
+	color: #10b759 !important;
+}
+
+.error{
+	color: #FF5722 !important;
+}
+.success{
+	/*color: greenyellow !important;*/
+	color: #10b759 !important;
+}
+.status_progress{
+	color: #d9ff07 !important;
 }
